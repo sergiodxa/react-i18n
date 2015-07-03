@@ -1,0 +1,36 @@
+{
+  "name": "react-i18",
+  "version": "1.0.0",
+  "description": "test de react-intl",
+  "main": "index.html",
+  "scripts": {
+    "build": "browserify -t babelify src/es6/app.js > build/js/app.js",
+    "build:alt": "browserify -t babelify src/es6/app-alt.js > build/js/app-alt.js",
+    "start": "serve",
+    "watch": "watchify -t babelify src/es6/app.js -o build/js/app.js",
+    "watch:alt": "watchify -t babelify src/es6/app-alt.js -o build/js/app-alt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiodxa/react-i18n.git"
+  },
+  "keywords": [
+    "react",
+    "i18n"
+  ],
+  "author": "Sergio Daniel Xalambrí <sergio@xalambri.com.ar> (http://sergio.xalambri.com.ar/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiodxa/react-i18n/issues"
+  },
+  "homepage": "https://github.com/sergiodxa/react-i18n",
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-intl": "^1.2.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "watchify": "^3.2.3"
+  }
+}
